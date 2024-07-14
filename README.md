@@ -5,16 +5,25 @@ This repository focuses on implementing and researching scheduling algorithms fo
 
 ### Current Research Areas
 
-1. **Scheduling Algorithms for DNNs**:
-   - Implementation and analysis of scheduling algorithms for efficient execution of DNNs on RISC-V.
-   - Exploration of techniques used in VGG and AlexNet for scheduling and optimization.
+ ### 1. Valuation of Novel SIMD MAC and AF Architecture
+- Conducted a comprehensive study on the valuation of novel Single Instruction, Multiple Data (SIMD) Multiply-Accumulate (MAC) and Activation Function (AF) architectures.
+- Evaluated the tradeoff between accuracy and area, providing insights into optimizing DNN performance.
 
-2. **Tiling and Stitch Strategy for DNNs**:
-   - Researching methods to break down DNN computations into smaller, manageable tiles.
-   - Studying stitch strategies to efficiently recombine tiled computations.
+### 2. Exploration of Advanced DNN Concepts
+- **Tiling**: Investigated techniques for dividing large DNN computations into smaller, manageable tiles to improve processing efficiency.
+- **Stitching**: Explored methods to recombine tiled computations effectively.
+- **Layers-Reused Scheduling**: Analyzed scheduling algorithms that maximize the reuse of layers to enhance computational efficiency.
+- **Pruning**: Studied the impact of pruning techniques on model size and performance, focusing on reducing computational complexity without significant loss of accuracy.
 
-3. **Operating System Concepts**:
-   - Understanding OS-level support for scheduling and resource management to enhance DNN performance on RISC-V.
+### 3. Implementation of FIFO Scheduler
+- **FIFO Scheduler using Dual-Port SRAM**: Designed and implemented a FIFO (First-In-First-Out) Scheduler in Verilog, utilizing Dual-Port SRAM. This component is crucial for managing data flow efficiently within the DNN accelerator, ensuring seamless data storage and retrieval, which is vital for maintaining high throughput and low latency in DNN operations.
+- The FIFO Scheduler supports simultaneous read and write operations, leveraging the dual-port capability of the SRAM to optimize data handling.
+
+### 4. Evaluation of Dynamically Configurable Variable Precision Systolic Array
+- Currently evaluating dynamically configurable variable precision systolic arrays to support various kernel sizes.
+- This involves designing systolic arrays that can adapt to different precision requirements, providing flexibility and efficiency in handling diverse DNN workloads.
+
+     
 
 ### Goals
 
